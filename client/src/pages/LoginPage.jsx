@@ -9,6 +9,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(function () {
+    console.log("Current environment:", process.env.NODE_ENV);
     const accessToken = Spotify.getAccessToken();
     setToken(accessToken);
   }, []);
@@ -23,9 +24,9 @@ function LoginPage() {
   );
 
   const REACT_APP_LOGIN_URI =
-    process.env.NODE_ENV !== "production"
-      ? "http://localhost:8888/login"
-      : "https://sound-wave-app-efde8f11e684.herokuapp.com/";
+    process.env.NODE_ENV !== "development"
+      ? "https://sound-wave-app-efde8f11e684.herokuapp.com/login"
+      : "http://localhost:8888/login";
 
   function handleLogin() {
     window.location.href = REACT_APP_LOGIN_URI;
