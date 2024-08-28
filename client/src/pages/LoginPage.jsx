@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Spotify from "../Spotify";
 import styles from "../pages/LoginPage.module.css";
@@ -24,8 +24,12 @@ function LoginPage() {
 
   const REACT_APP_LOGIN_URI =
     process.env.NODE_ENV !== "production"
-      ? "https://sound-wave-app-efde8f11e684.herokuapp.com/login"
+      ? "https://sound-wave-app-efde8f11e684.herokuapp.com/"
       : "http://localhost:8888/login";
+
+  function handleLogin() {
+    window.location.href = REACT_APP_LOGIN_URI;
+  }
 
   return (
     <main className={styles.loginpage}>
@@ -33,9 +37,9 @@ function LoginPage() {
         <h1>Sound Wave</h1>
         <h2>Create playlists and share with your friends</h2>
         {!token ? (
-          <Link to={`${REACT_APP_LOGIN_URI}`}>
-            <button className={styles.button}>Log In To Spotify</button>
-          </Link>
+          <button className={styles.button} onClick={handleLogin}>
+            Log In To Spotify
+          </button>
         ) : (
           <p>Youre already logged in!</p>
         )}
