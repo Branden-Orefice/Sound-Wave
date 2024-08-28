@@ -1,0 +1,48 @@
+.playlistbar {
+  border: none;
+  padding: 1.1rem 1.6rem;
+  font-size: 1.8rem;
+  justify-self: center;
+  width: 40rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+  color: var(--color-text-dark);
+  background-color: var(--color-background-light);
+}
+
+.playlistbar::placeholder {
+  color: var(--color-text-dark);
+}
+
+.playlistbar:focus {
+  outline: none;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.playlist button {
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+
+.closedplaylist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 40rem 12.5rem;
+}
+
+.closedplaylist h3 {
+  font-size: 2rem;
+}
+
+.closedplaylist p {
+  font-size: 1.5rem;
+  max-width: 30ch;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}

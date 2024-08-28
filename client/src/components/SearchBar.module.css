@@ -1,0 +1,39 @@
+.searchbar {
+  border: none;
+  padding: 1.1rem 1.6rem;
+  font-size: 1.8rem;
+  justify-self: center;
+  width: 40rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+  color: var(--color-text-dark);
+  background-color: var(--color-background-medium);
+}
+
+.searchbar::placeholder {
+  color: var(--color-text-dark);
+}
+
+.searchbar:focus {
+  outline: none;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+button {
+  float: right;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: var(--color-cyan);
+  color: var(--color-text);
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-cyan);
+  border-radius: 4px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgb(8, 145, 178);
+}
