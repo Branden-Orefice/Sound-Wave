@@ -24,7 +24,7 @@ function LoginPage() {
 
   const REACT_APP_LOGIN_URI =
     process.env.NODE_ENV !== "production"
-      ? "https://sound-wave-app-efde8f11e684.herokuapp.com/"
+      ? "https://sound-wave-app-efde8f11e684.herokuapp.com/login"
       : "http://localhost:8888/login";
 
   return (
