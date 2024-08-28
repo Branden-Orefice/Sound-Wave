@@ -11,7 +11,7 @@ const REDIRECT_URI = process.env.REDIRECT_URI;
 const FRONTEND_URI = process.env.FRONTEND_URI;
 const PORT = process.env.PORT || 8888;
 
-app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 
 const generateRandomString = length => {
   let text = '';
@@ -100,7 +100,7 @@ app.get('/refresh_token', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, './client/build', 'index.html'));
 });
 
 app.listen(PORT, () => {
