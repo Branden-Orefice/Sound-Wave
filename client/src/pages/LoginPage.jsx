@@ -1,4 +1,4 @@
-import { useNavigate, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Spotify from "../Spotify";
 import styles from "../pages/LoginPage.module.css";
@@ -21,7 +21,10 @@ function LoginPage() {
     [token, navigate]
   );
 
-  const LOGIN_URI = "https://sound-wave-app-efde8f11e684.herokuapp.com/login";
+  const LOGIN_URI =
+    import.meta.env.VITE_NODE_ENV !== "production"
+      ? "http://localhost:8888/login"
+      : "https://sound-wave-app-efde8f11e684.herokuapp.com/login";
 
   return (
     <main className={styles.loginpage}>
