@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { usePlaylist } from "../context/PlaylistContext";
-import Spotify from "../Spotify";
+import { logout } from "../Spotify";
 import styles from "../components/SearchBar.module.css";
 
 function SearchBar({ resetSearchValue }) {
@@ -34,7 +34,7 @@ function SearchBar({ resetSearchValue }) {
         }}
       />
       <div className={styles.button}>
-        <button onClick={Spotify.logout}>Logout</button>
+        <button onClick={logout}>Logout</button>
       </div>
     </>
   );

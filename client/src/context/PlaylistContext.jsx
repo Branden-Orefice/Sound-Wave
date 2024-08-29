@@ -1,8 +1,8 @@
 import { createContext, useContext, useReducer } from "react";
-import Spotify from "../Spotify";
+import { accessToken } from "../Spotify";
 
 const BASE_URL = "https://api.spotify.com/v1";
-const userToken = Spotify.getAccessToken();
+const userToken = accessToken;
 const header = { Authorization: `Bearer ${userToken}` };
 
 const PlaylistContext = createContext();

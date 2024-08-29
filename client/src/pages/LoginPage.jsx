@@ -1,6 +1,6 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Spotify from "../Spotify";
+import { accessToken } from "../Spotify";
 import styles from "../pages/LoginPage.module.css";
 
 function LoginPage() {
@@ -8,7 +8,6 @@ function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(function () {
-    const accessToken = Spotify.getAccessToken();
     setToken(accessToken);
   }, []);
 
