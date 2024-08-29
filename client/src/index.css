@@ -26,8 +26,7 @@ body {
   color: var(--color-text);
 }
 
-.box::-webkit-scrollbar,
-.list::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
