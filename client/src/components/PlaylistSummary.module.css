@@ -27,7 +27,7 @@
 
 .playlistTracks {
   list-style: none;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .playlistTracks li {

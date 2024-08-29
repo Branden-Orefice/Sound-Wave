@@ -9,7 +9,6 @@ function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(function () {
-    console.log("Current environment:", process.env.NODE_ENV);
     const accessToken = Spotify.getAccessToken();
     setToken(accessToken);
   }, []);

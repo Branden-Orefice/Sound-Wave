@@ -1,6 +1,6 @@
 .tracklist {
   list-style: none;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .tracklist li {
