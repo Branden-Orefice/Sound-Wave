@@ -24,6 +24,7 @@ body {
   padding: 2.5rem;
   background-color: var(--color-background-dark);
   color: var(--color-text);
+  overflow: hidden;
 }
 
 .box::-webkit-scrollbar,
