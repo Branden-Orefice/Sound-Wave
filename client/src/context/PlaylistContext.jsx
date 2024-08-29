@@ -3,7 +3,10 @@ import { accessToken } from "../Spotify";
 
 const BASE_URL = "https://api.spotify.com/v1";
 const userToken = accessToken;
-const header = { Authorization: `Bearer ${userToken}` };
+const header = {
+  Authorization: `Bearer ${userToken}`,
+  "Content-Type": "application/json",
+};
 
 const PlaylistContext = createContext();
 
