@@ -49,6 +49,7 @@ function PlaylistSummary() {
             albumName={track.album}
             popularity={track.popularity}
             duration={track.duration_ms}
+            images={track.images}
           />
         ))}
       </ul>

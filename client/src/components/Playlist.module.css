@@ -5,6 +5,12 @@
   gap: 5rem;
 }
 
+.playlist img {
+  height: 64px;
+  width: 64px;
+  border-radius: 5%;
+}
+
 .playlist h3 {
   margin-left: 1.5rem;
   font-size: 1.5rem;

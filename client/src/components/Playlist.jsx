@@ -1,7 +1,7 @@
 import { usePlaylist } from "../context/PlaylistContext";
 import styles from "../components/Playlist.module.css";
 
-function Playlist({ trackName, artistName, albumName, trackId }) {
+function Playlist({ trackName, artistName, albumName, trackId, images }) {
   const { deleteTrack } = usePlaylist();
 
   function handleDelete() {
@@ -11,6 +11,7 @@ function Playlist({ trackName, artistName, albumName, trackId }) {
     <>
       <li className={styles.playlist}>
         <div>
+          <img src={images} />
           <h3>{trackName}</h3>
 
           <p>{artistName}</p>
