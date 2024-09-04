@@ -14,13 +14,12 @@ function Track({ track, trackName, artistName, albumName, images }) {
         <div>
           <img src={images} />
           <h3>{trackName}</h3>
-
           <p>{artistName}</p>
           <p>{albumName}</p>
-          <button className={styles.trackbutton} onClick={() => handleClick()}>
-            +
-          </button>
         </div>
+        <button className={styles.trackbutton} onClick={() => handleClick()}>
+          +
+        </button>
       </li>
     </>
   );

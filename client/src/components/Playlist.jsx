@@ -13,16 +13,15 @@ function Playlist({ trackName, artistName, albumName, trackId, images }) {
         <div>
           <img src={images} />
           <h3>{trackName}</h3>
-
           <p>{artistName}</p>
           <p>{albumName}</p>
-          <button
-            className={styles.playlistbutton}
-            onClick={() => handleDelete()}
-          >
-            -
-          </button>
         </div>
+        <button
+          className={styles.playlistbutton}
+          onClick={() => handleDelete()}
+        >
+          -
+        </button>
       </li>
     </>
   );

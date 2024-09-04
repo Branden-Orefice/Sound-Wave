@@ -28,11 +28,13 @@
 .playlistTracks {
   list-style: none;
   overflow: hidden;
+  padding: 0.8rem 0;
 }
 
 .playlistTracks li {
-  font-size: 1.6rem;
+  display: flex;
   align-items: center;
+  font-size: 1.6rem;
   padding: 1.6rem;
   border-bottom: 1px solid var(--color-background-light);
   transition: all 0.3s;

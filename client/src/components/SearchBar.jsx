@@ -5,12 +5,7 @@ import styles from "../components/SearchBar.module.css";
 
 function SearchBar({ resetSearchValue }) {
   const [searchValue, setSearchValue] = useState("");
-  const { searchTracks } = usePlaylist();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    searchTracks(searchValue);
-  }
+  const { searchTracks, clearSearch } = usePlaylist();
 
   useEffect(
     function () {
@@ -21,6 +16,19 @@ function SearchBar({ resetSearchValue }) {
     [resetSearchValue]
   );
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    searchTracks(searchValue);
+  }
+
+  function handleChange(e) {
+    const value = e.target.value;
+    setSearchValue(value);
+    if (value.trim() === "") {
+      clearSearch();
+    }
+  }
+
   return (
     <>
       <input
@@ -28,7 +36,7 @@ function SearchBar({ resetSearchValue }) {
         placeholder="Song, Album, or Artist..."
         type="text"
         value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
+        onChange={handleChange}
         onKeyDown={(e) => {
           if (e.key === "Enter") handleSubmit(e);
         }}

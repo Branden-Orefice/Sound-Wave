@@ -5,6 +5,7 @@
 }
 
 .tracklist li {
+  display: flex;
   font-size: 1.6rem;
   align-items: center;
   padding: 1.6rem;

@@ -61,6 +61,13 @@ function reducer(state, action) {
         search: [],
       };
 
+    case "clear/search":
+      return {
+        ...state,
+        isLoading: false,
+        search: [],
+      };
+
     case "rejected":
       return {
         ...state,
@@ -98,7 +105,6 @@ function PlaylistProvider({ children }) {
         duration: track.duration_ms,
         images: track.album.images[2]?.url,
       }));
-      console.log(tracks);
       dispatch({ type: "tracks/loaded", payload: tracks });
     } catch {
       dispatch({
@@ -199,6 +205,18 @@ function PlaylistProvider({ children }) {
     }
   }
 
+  async function clearSearch() {
+    dispatch({ type: "loading" });
+    try {
+      dispatch({ type: "clear/search" });
+    } catch {
+      dispatch({
+        type: "rejected",
+        payload: "There was an error clearing search",
+      });
+    }
+  }
+
   return (
     <PlaylistContext.Provider
       value={{
@@ -211,6 +229,7 @@ function PlaylistProvider({ children }) {
         deleteTrack,
         createPlaylist,
         clearPlaylist,
+        clearSearch,
       }}
     >
       {children}
