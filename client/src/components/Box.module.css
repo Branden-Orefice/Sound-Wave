@@ -1,6 +1,6 @@
 .box {
-  width: 60rem;
-  max-width: 60rem;
+  width: 65rem;
+  max-width: 65rem;
   background-color: var(--color-background-medium);
   border-radius: 1rem;
   overflow: scroll;

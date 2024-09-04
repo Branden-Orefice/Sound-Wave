@@ -4,8 +4,8 @@
   font-size: 1.8rem;
   justify-self: center;
   width: 40rem;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
   border-radius: 0.7rem;
   transition: all 0.3s;
   color: var(--color-text-dark);
@@ -23,8 +23,8 @@
 }
 
 .playlist button {
-  margin-top: 1.5rem;
-  margin-right: 2rem;
+  margin-top: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .closedplaylist {

@@ -13,7 +13,7 @@
 
 .track h3 {
   font-size: 1.5rem;
-  flex-basis: 125px;
+  flex-basis: 100px;
   color: var(--color-text-light);
 }
 
