@@ -96,7 +96,9 @@ function PlaylistProvider({ children }) {
         uri: track.uri,
         popularity: track.popularity,
         duration: track.duration_ms,
+        images: track.album.images[2]?.url,
       }));
+      console.log(tracks);
       dispatch({ type: "tracks/loaded", payload: tracks });
     } catch {
       dispatch({

@@ -5,6 +5,12 @@
   gap: 5rem;
 }
 
+.track img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
 .track h3 {
   margin-left: 1.5rem;
   font-size: 1.5rem;
