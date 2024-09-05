@@ -17,6 +17,13 @@ Sound Wave is a Spotify playlist app built with React and ExpressJS. It allows u
 - **Track Information**: Fetch and display track details from Spotify.
 - **Responsive Design**: Fully responsive interface for an optimal user experience on any device.
 
+## Screenshots
+<img src="main.png" />
+<img src="app.png" />
+<img src="tracks.png" />
+<img src="playlist.png" />
+<img src="create.png" />
+
 ## Installation
 
 1. Clone the repository:
