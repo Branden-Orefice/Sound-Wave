@@ -48,3 +48,70 @@ button {
 button:hover {
   box-shadow: 0 0 20px rgb(8, 145, 178);
 }
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .loginpage h1 {
+    font-size: 3rem;
+  }
+
+  .loginpage h2 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .loginpage h1 {
+    font-size: 4rem;
+  }
+
+  .loginpage h2 {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+  }
+}
+
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .loginpage h1 {
+    font-size: 5rem;
+  }
+
+  .loginpage h2 {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .loginpage h1 {
+    font-size: 5.5rem;
+  }
+
+  .loginpage h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Extra Large Screen */
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .loginpage h1 {
+    font-size: 6.5rem;
+  }
+
+  .loginpage h2 {
+    font-size: 3.5rem;
+  }
+}

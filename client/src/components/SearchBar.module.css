@@ -37,3 +37,45 @@ button {
 button:hover {
   box-shadow: 0 0 20px rgb(8, 145, 178);
 }
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchbar {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+  button {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .searchbar {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+  button {
+    font-size: 1.2rem;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .searchbar {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .searchbar {
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+}

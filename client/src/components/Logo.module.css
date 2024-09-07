@@ -4,8 +4,52 @@
   gap: 0.8rem;
 }
 
+.wave {
+  font-size: 2.2rem;
+}
+
 .logo h1 {
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--color-text-light);
+}
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .wave {
+    display: none;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .wave {
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .wave {
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .wave {
+    font-size: 1.8rem;
+  }
+  .logo h1 {
+    font-size: 1.8rem;
+  }
 }

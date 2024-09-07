@@ -30,3 +30,22 @@ body {
   width: 0px;
   background: transparent;
 }
+
+/* Extra Small Screen */
+/* @media (min-width: 320px) and (max-width: 480px) {
+} */
+/* Small Screen */
+/* @media (min-width: 481px) and (max-width: 640px) {
+} */
+/* Base Screen */
+/* @media (min-width: 641px) and (max-width: 800px) {
+} */
+/* Large Screen */
+/* @media (min-width: 801px) and (max-width: 1025px) {
+} */
+/* Extra Large Screen */
+/* @media (min-width: 1026px) and (max-width: 1280px) {
+} */
+/* XX Large Screen */
+/* @media (min-width: 1281px) {
+} */

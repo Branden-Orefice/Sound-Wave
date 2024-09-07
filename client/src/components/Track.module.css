@@ -28,3 +28,61 @@
   border-radius: 50%;
   font-size: 1.4rem;
 }
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .track div {
+    gap: 2rem;
+  }
+  .track h3 {
+    font-size: 1.2rem;
+  }
+  .track p {
+    font-size: 1rem;
+  }
+  .trackbutton {
+    font-size: 1rem;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .track div {
+    gap: 2rem;
+  }
+  .track h3 {
+    font-size: 1.4rem;
+  }
+  .track p {
+    font-size: 1.2rem;
+  }
+  .trackbutton {
+    font-size: 1.2rem;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .trackbutton {
+    font-size: 1.2rem;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .trackbutton {
+    font-size: 1.2rem;
+  }
+}
+/* Extra Large Screen */
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .track div {
+    gap: 3rem;
+  }
+  .track h3 {
+    font-size: 1.4rem;
+  }
+  .track p {
+    font-size: 1.2rem;
+  }
+  .trackbutton {
+    font-size: 1.2rem;
+  }
+}

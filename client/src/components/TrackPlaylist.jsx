@@ -26,17 +26,19 @@ function TrackPlaylist({ onPlaylistCreated }) {
       {!isSaved ? (
         <>
           <PlaylistSummary />
-          <input
-            className={styles.playlistbar}
-            type="text"
-            placeholder="Create Playlist..."
-            value={playlistName}
-            required
-            onChange={(e) => setPlaylistName(e.target.value)}
-          />
-          <button onClick={() => handleSavePlaylist()} disabled={isLoading}>
-            Save to Spotify
-          </button>
+          <div className={styles.inputs}>
+            <input
+              className={styles.playlistbar}
+              type="text"
+              placeholder="Create Playlist..."
+              value={playlistName}
+              required
+              onChange={(e) => setPlaylistName(e.target.value)}
+            />
+            <button onClick={() => handleSavePlaylist()} disabled={isLoading}>
+              Create
+            </button>
+          </div>
         </>
       ) : (
         <>

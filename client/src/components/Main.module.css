@@ -1,7 +1,37 @@
 .main {
   margin-top: 2.4rem;
   height: calc(100vh - 7.2rem - 3 * 2.4rem);
-  display: flex;
-  gap: 2.4rem;
-  justify-content: center;
+}
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main {
+    flex-direction: row;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .main {
+    flex-direction: row;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .main {
+    flex-direction: row;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .main {
+    flex-direction: row;
+  }
+}
+/* XX Large Screen */
+@media (min-width: 1026px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
 }

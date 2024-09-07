@@ -43,3 +43,24 @@
 .playlistTracks li:hover {
   background-color: var(--color-background-light);
 }
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .summary h2 {
+    font-size: 1.4rem;
+  }
+
+  .summary p {
+    font-size: 1.2rem;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .summary h2 {
+    font-size: 1.4rem;
+  }
+
+  .summary p {
+    font-size: 1.2rem;
+  }
+}

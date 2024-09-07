@@ -1,11 +1,17 @@
+.inputs {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .playlistbar {
   border: none;
   padding: 1.1rem 1.6rem;
   font-size: 1.8rem;
   justify-self: center;
   width: 40rem;
-  margin-top: 2.5rem;
-  margin-left: 2.5rem;
+  margin-top: 1rem;
   border-radius: 0.7rem;
   transition: all 0.3s;
   color: var(--color-text-dark);
@@ -22,9 +28,8 @@
   transform: translateY(-2px);
 }
 
-.playlist button {
-  margin-top: 2.5rem;
-  margin-right: 2.5rem;
+.inputs button {
+  font-size: 1.8rem;
 }
 
 .closedplaylist {
@@ -45,4 +50,71 @@
   line-height: 1.5;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
+}
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .playlistbar {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+  .inputs button {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .closedplaylist {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .closedplaylist h3 {
+    font-size: 1.2rem;
+  }
+
+  .closedplaylist p {
+    font-size: 1rem;
+  }
+  .closedplaylist button {
+    font-size: 1.2rem;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .playlistbar {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+  .inputs button {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .playlistbar {
+    font-size: 1.5rem;
+  }
+  .inputs button {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .playlistbar {
+    font-size: 1.5rem;
+  }
+  .inputs button {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+/* Extra Large Screen */
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .playlistbar {
+    font-size: 1.5rem;
+  }
+  .inputs button {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
 }

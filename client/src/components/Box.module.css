@@ -1,8 +1,32 @@
 .box {
-  width: 65rem;
   max-width: 65rem;
   background-color: var(--color-background-medium);
   border-radius: 1rem;
   overflow: scroll;
   position: relative;
+}
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 480px) {
+  .box {
+    margin: 2rem auto;
+  }
+}
+/* Small Screen */
+@media (min-width: 481px) and (max-width: 640px) {
+  .box {
+    margin: 2rem auto;
+  }
+}
+/* Base Screen */
+@media (min-width: 641px) and (max-width: 800px) {
+  .box {
+    margin: 2rem auto;
+  }
+}
+/* Large Screen */
+@media (min-width: 801px) and (max-width: 1025px) {
+  .box {
+    margin: 2rem auto;
+  }
 }
