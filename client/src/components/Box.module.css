@@ -30,3 +30,17 @@
     margin: 2rem auto;
   }
 }
+
+/* Extra Large Screen */
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .box {
+    width: 65rem;
+  }
+}
+
+/* XX Large Screen */
+@media (min-width: 1281px) {
+  .box {
+    width: 65rem;
+  }
+}
