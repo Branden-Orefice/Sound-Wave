@@ -57,6 +57,7 @@
   .playlistbar {
     font-size: 1.2rem;
     width: 20rem;
+    margin-bottom: 1.5rem;
   }
   .inputs button {
     padding-top: 1rem;
